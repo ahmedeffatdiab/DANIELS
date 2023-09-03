@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+html{
+    font-size:16px;
+}
+
+.navbar{
+  z-index:1000;
+}
+.navbarActive{
+  background-color: rgb(0, 0, 0) !important;
+
+}
+.navLinkActive{
+  text-align: center;
+  color:black !important;
+}
+.navbar-toggler{
+background-color:white
+}
+.title h2::after{
+  content: '';
+  width: 20%;
+  height: 20px;
+  background-image: url(../img/img/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  /*bottom: -10px;*/
+  left: 50%;
+  top:80%;
+  transform: translate(-50%);
+  z-index:0;
+}
+/* start style of Navbar*/
+.navbar li{
+  margin:0 5px;
+}
+.navbar a{
+  color:white !important;
+  position: relative;
+}
+.navbar li a:not(.UnderLine):after{
+  content:"";
+  width:0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top:100%;
+  left: 0;
+  margin:0 5px;
+  transition: all .5s linear;
+
+}
+.navbar li a:hover::after{
+  width:90%;
+}
+.UnderLine::after{
+  content:"";
+  width:90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top:100%;
+  left: 0;
+  margin:0 5px;
+  
+}
+
+/* start style of home*/
+.home{
+  background-image: url(../img/img/bg.jpg);
+  width:100%;
+  height:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home::after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.7);
+
+}
+.home-flex{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  transform: translate(-50%,-50%);
+  color:white;
+  z-index:1000;
+}
+.home-flex p::after{
+  content:"";
+  font-size:1.8;
+  font-weight: normal;
+  font-family:  'Montserrat', sans-serif;
+  animation: complecated 10s linear infinite;
+}
+.homeIcon .fa-facebook,
+.homeIcon .fa-twitter,
+.homeIcon .fa-linkedin,
+.homeIcon .fa-behance,
+.homeIcon .fa-youtube{
+  margin:50px 15 px;
+  padding:10px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+}
+@keyframes complecated{
+  1%{
+    content: "L|";
+  }
+  2%{
+    content: "La|";
+  }
+  3%{
+    content: "Lar|";
+  }
+  4%{
+    content: "Larr|";
+  }
+  5%{
+    content: "Larry|";
+  }
+  6%{
+    content: "Larry |";
+  }
+  7%{
+    content: "Larray  D|";
+  }
+  14%{
+    content: "Larray Da|";
+  }
+  8%{
+    content: "Larray Dan|";
+  }
+  9%{
+    content: "Larray Dani|";
+  }
+  10%{
+    content: "Larray Danie|";
+  }
+  11%{
+    content: "Larray Daniel|";
+  }
+  12%{
+    content: "Larray Daniels|";
+  }
+  13%{
+    content: "Larray Daniels |";
+  }
+  14%{
+    content: "Larray Daniels |";
+  }
+  15%{
+    content: "Larray Daniels |";
+  }
+  16%{
+    content: "Larray Daniels |";
+  }
+  17%{
+    content: "Larray Daniels |";
+  }
+  18%{
+    content: "Larray Daniels |";
+  }
+  19%{
+    content: "Larray Daniels |";
+  }
+  20%{
+    content: "Larray Daniels |";
+  }
+  21%{
+    content: "Larray Daniels |";
+  }
+  22%{
+    content: "Larray Daniels |";
+  }
+  23%{
+    content: "Larray Daniels |";
+  }
+  24%{
+    content: "Larray Daniels |";
+  }
+  25%{
+    content: "Larray Daniels |";
+  }
+  26%{
+    content: "Larray Daniels |";
+  }
+  27%{
+    content: "Larray Daniels|";
+  }
+  28%{
+    content: "Larray Daniel|";
+  }
+  29%{
+    content: "Larray Danie|";
+  }
+  30%{
+    content: "Larray Dani|";
+  }
+  31%{
+    content: "Larray Dan|";
+  }
+  32%{
+    content: "Larray Da|";
+  }
+  33%{
+    content: "Larray D|";
+  }
+  34%{
+    content: "Larray |";
+  }
+  35%{
+    content: "Larray|";
+  }
+  36%{
+    content: "Larra|";
+  }
+  37%{
+    content: "Larr|";
+  }
+  38%{
+    content: "Lar|";
+  }
+  39%{
+    content: "La|";
+  }
+  40%{
+    content: "l|";
+  }
+  41%{
+    content: "|";
+  }
+  42%{
+    content: "D|";
+  }
+  43%{
+    content: "De|";
+  }
+  44%{
+    content: "Des|";
+  }
+  45%{
+    content: "Desi|";
+  }
+  46%{
+    content: "Desig|";
+  }
+  47%{
+    content: "Design|";
+  }
+  48%{
+    content: "Desiger |";
+  }
+  50%{
+    content: "Desiger |";
+  }
+  51%{
+    content: "Desiger |";
+  }
+  52%{
+    content: "Desiger |";
+  }
+  53%{
+    content: "Desiger |";
+  }
+  54%{
+    content: "Desiger |";
+  }
+  55%{
+    content: "Desiger |";
+  }
+  56%{
+    content: "Desiger |";
+  }
+  57%{
+    content: "Desiger |";
+  }
+  58%{
+    content: "Desiger |";
+  }
+  59%{
+    content: "Desiger |";
+  }
+  60%{
+    content: "Desiger |";
+  }
+  61%{
+    content: "Desiger |";
+  }
+  62%{
+    content: "Desiger |";
+  }
+  63%{
+    content: "Desiger|";
+  }
+  64%{
+    content: "Desige|";
+  }
+  65%{
+    content: "Desig|";
+  }
+  66%{
+    content: "Desi|";
+  }
+  67%{
+    content: "Des|";
+  }
+  68%{
+    content: "De|";
+  }
+  69%{
+    content: "D|";
+  }
+  70%{
+    content: "|";
+  }
+  71%{
+    content: "D|";
+  }
+  72%{
+    content: "De|";
+  }
+  73%{
+    content: "Dev|";
+  }
+  74%{
+    content: "Devl|";
+  }
+  75%{
+    content: "Deve|";
+  }
+  76%{
+    content: "Develo|";
+  }
+  77%{
+    content: "Develop|";
+  }
+  78%{
+    content: "Develope|";
+  }
+  79%{
+    content: "Developer|";
+  }
+  80%{
+    content: "Developer |";
+  }
+  81%{
+    content: "Developer |";
+  }
+  82%{
+    content: "Developer |";
+  }
+  83%{
+    content: "Developer |";
+  }
+  84%{
+    content: "Developer |";
+  }
+  85%{
+    content: "Developer |";
+  }
+  85%{
+    content: "Developer |";
+  }
+  85%{
+    content: "Developer |";
+  }
+  86%{
+    content: "Developer |";
+  }
+  87%{
+    content: "Developer |";
+  }
+  88%{
+    content: "Developer |";
+  }
+  88%{
+    content: "Developer |";
+  }
+  89%{
+    content: "Developer |";
+  }
+  89%{
+    content: "Developer |";
+  }
+  90%{
+    content: "Developer |";
+  }
+  91%{
+    content: "Developer |";
+  }
+  91%{
+    content: "Developer|";
+  }
+  91%{
+    content: "Develope|";
+  }
+  92%{
+    content: "Develop|";
+  }
+  93%{
+    content: "Develo|";
+  }
+  94%{
+    content: "Devel|";
+  }
+  95%{
+    content: "Deve|";
+  }
+  96%{
+    content: "Dev|";
+  }
+  97%{
+    content: "De|";
+  }
+  98%{
+    content: "D|";
+  }
+  99%{
+    content: "|";
+  }
+  100%{
+    content: "|";
+  }
+}
+
+/*Start of About content*/
+.About{
+  width:100%;
+  padding:50px 0;
+}
+.skill-progress{
+  width:100%;
+  height:25px;
+  background-color: rgba(128, 128, 128, 0.432);
+  border-radius: 5px;;
+}
+.skill-progress div{
+  height: 100%;
+  background-color:rgb(0, 0, 0);
+  padding-bottom: 20px;
+}
+.btn-first:hover{
+  background-color:white;
+  color:black;
+}
+.btn-second:hover{
+  background-color:black;
+  color:white;
+}
+.about-dotted{
+  position: absolute;
+  width:80%;
+  height:80%;
+  top:16%;
+  z-index: -1;
+  background-image: url(../img/img/dots.png);
+  background-repeat: repeat;
+
+}
+
+/*style of services content*/
+
+
+.fa-laptop,
+.services .fa-bullhorn,
+.fa-umbrella,
+.fa-gem,
+.fa-tv,
+.fa-camera{
+  background-color: rgba(128, 128, 128, 0.374);
+  color:rgb(0, 0, 0)
+}
+.fa-laptop:hover
+,.services .fa-bullhorn:hover
+, .fa-umbrella:hover
+,.fa-gem:hover,
+.fa-tv:hover,
+.fa-camera:hover{
+  background-color: black;
+  color:white;
+}
+/* start style to portfolio content*/
+.nav-link{
+  margin:0 10px !important;
+}
+.nav-link::after{
+  content: "";
+  width:0%;
+  height:2px;
+  position: absolute;
+  top:100%;
+  left:0;
+  background-color: #198754;
+
+} 
+.NavLink_active::after{
+  width:100%;
+}
+.nav-link:hover::after{
+  width:90%;
+  margin: auto;
+}
+.overlay-info{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:15%;
+  left:0;
+  background-color: rgba(0,0,0,.5);
+  z-index: -1;
+  opacity: 0;
+  transition: all .35s linear;
+
+}
+.protfolio-item{
+  overflow: hidden;
+}
+.protfolio-item:hover .overlay-info{
+  z-index: 1;
+  opacity: 1;
+  top:0;
+  background-color: white;
+  border: 4px solid #c6c9cb;
+}
+.animated-paragraph{
+  margin-top:-10px;
+  transition: all .5s linear;
+}
+.overlay-info:hover .animated-paragraph{
+  margin-top:3px;
+  font-family: 'Montserrat', sans-serif;
+}
+.overlay-icon{
+  margin-top:10px;
+  transition: all .5s  linear;
+
+}
+.overlay-info:hover .overlay-icon{
+  margin-top:-10px;
+}
+
+/*the start of style to testimonials*/
+.Testimonials{
+  width:100%;
+  height:500px;
+}
+.testimonial-bar{
+  width:10px !important;
+  height:10px !important;
+  border-radius: 50%;
+}
+
+
+.card-item{
+  overflow:hidden;
+}
+.card-item img{
+  width:100%;
+  height: 100%;
+  transition: all .5s linear;
+
+}
+.card-item:hover img{
+  transform: scale(1.2);
+}
+.card-body a::after{
+  content:'';
+  width:100%;
+  height:2px;
+  position: absolute;
+  top:120%;
+  left:0;
+  background-color: black;
+}
+.contact .fa-location-arrow,
+.fa-envelope,
+.fa-phone{
+  background-color: rgba(128, 128, 128, 0.394);
+}
+.contact .fa-location-arrow:hover,
+.fa-envelope:hover,
+.fa-phone:hover{
+  background-color: rgb(0, 0, 0);
+  color:white
+}
+.footer{
+  margin: 0;
+  padding:0;
+
+}
+@media(max-width:768px){
+  .home-flex p::after{
+    font-size:1.5rem;
+  }
+  .title h2::after{
+    width: 40%;
+   
+  }
+}
+@media(max-width:600px){
+  .skill-progress{
+    margin:20px 0;
+  }
+}
+
